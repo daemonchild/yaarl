@@ -1,0 +1,50 @@
+{
+    "userinfo": {
+        "id":               "autoindex",
+        "callsign":         "mandatory",
+        "name":             "mandatory",
+        "qth":              "mandatory",
+        "latitude":         "mandatory",
+        "longitude":        "mandatory"
+    },
+    "logbook": [
+        {
+            "id":                "autoindex:optional",
+            "callsign":          "mandatory",
+            "first_name":        "string:optional",
+            "freq_rx":           "string:optional",
+            "freq_tx":           "mandatory:optional",
+            "log_date":          "mandatory:optional",
+            "time_start":        "mandatory:optional",
+            "time_end":          "string:optional",
+            "band":              "string:optional",
+            "mode":              "string:mandatory",
+            "sigrep_rcvd":       "string:optional",
+            "sigrep_sent":       "string:optional",
+            "notes":             "string:optional",
+            "logbook_callsign":  "string:mandatory",
+            "grid_square":       "string:optional",
+            "tx_pwr":            "string:optional",
+            "transceiver":       "string:optional",
+            "antenna":           "string:optional",
+            "rptr_callsign":     "string:optional"
+        }
+    ],
+    "callsigns": [
+        {
+            "id":               "autoindex",
+            "callsign":         "mandatory",
+            "continent":        "string",
+            "country":          "string",
+            "distance":         "string",
+            "email":            "string",
+            "grid_square":      "string",
+            "latitude":         "string",
+            "longitude":        "string",
+            "first_name":       "string",
+            "full_name":        "string",
+            "qth":              "string",
+            "notes":            "string"
+        }
+    ]
+}
