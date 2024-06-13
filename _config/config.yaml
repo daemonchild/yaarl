@@ -1,1 +1,15 @@
-debug: True
+# User Definable Config - Shared Across Platform (in v0.1 anyway)
+
+# API config
+
+# Application Debug Output
+API_debug: True
+API_log: True
+
+# Configure RO Access to API
+API_readOnly: False
+
+# You can go without authentication if you really want to.
+API_auth: True              
+
+

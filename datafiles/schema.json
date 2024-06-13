@@ -10,19 +10,20 @@
     "logbook": [
         {
             "id":                "autoindex:optional",
-            "callsign":          "mandatory",
+            "call_sign":          "mandatory",
             "first_name":        "string:optional",
             "freq_rx":           "string:optional",
-            "freq_tx":           "mandatory:optional",
-            "log_date":          "mandatory:optional",
-            "time_start":        "mandatory:optional",
+            "freq_tx":           "string:mandatory",
+            "date_start":        "string:mandatory",
+            "date_end":          "string:optional",
+            "time_start":        "string:mandatory",
             "time_end":          "string:optional",
             "band":              "string:optional",
             "mode":              "string:mandatory",
             "sigrep_rcvd":       "string:optional",
             "sigrep_sent":       "string:optional",
             "notes":             "string:optional",
-            "logbook_callsign":  "string:mandatory",
+            "owner":             "string:mandatory",     
             "grid_square":       "string:optional",
             "tx_pwr":            "string:optional",
             "transceiver":       "string:optional",
@@ -30,10 +31,10 @@
             "rptr_callsign":     "string:optional"
         }
     ],
-    "callsigns": [
+    "contact": [
         {
             "id":               "autoindex",
-            "callsign":         "mandatory",
+            "call_sign":        "mandatory",
             "continent":        "string",
             "country":          "string",
             "distance":         "string",
@@ -44,7 +45,8 @@
             "first_name":       "string",
             "full_name":        "string",
             "qth":              "string",
-            "notes":            "string"
+            "notes":            "string",
+            "added_by":         "string"
         }
     ]
 }
